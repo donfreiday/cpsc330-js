@@ -25,7 +25,6 @@ https://auth0.com/blog/a-brief-history-of-javascript/
 
 ### Java-like syntax
 
-Java-like Syntax
 Although keeping the syntax close to Java was not the original idea behind JavaScript, marketing forces changed that. In retrospective, although a different syntax might have been more convenient for certain features, it is undeniable that a familiar syntax has helper JavaScript gain ground easily.
 
 Compare this Java example:
@@ -54,6 +53,16 @@ try {
 } catch(e) {
   console.log('Unexpected exception' + e);
 }
+```
+
+### Functions are objects
+
+```Javascript
+var myFunction = function() {
+  console.log('hello');
+}
+otherFunction(myFunction);
+myFunction.property = '1';
 ```
 
 ### Background
