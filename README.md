@@ -6,6 +6,56 @@ Class presentation on JavaScript
 
 ## Topics
 
+
+### History
+
+JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was inspired by Java, Scheme and Self.
+
+Early design choices like automatic semicolon insertion (ASI), the event loop, lack of classes, unusual inheritance (prototypical) and type coercion are laughed at by people who have not taken the time to understand the thinking behind them.
+
+Even Brendan Eich, the creator of the language, is occasionally apologetic for design decisions he made for the language.
+
+What was meant to be a Scheme for the browser turned into something very different. The pressure to close the deal with Sun and make Mocha a scripting companion to Java forced Eich's hand. A Java-like syntax was required, and familiar semantics for many common idioms was also adopted. So Mocha was not like Scheme at all. It looked like a dynamic Java, but underneath it was a very different beast: a premature lovechild of Scheme and Self, with Java looks.
+
+The prototype of Mocha was integrated into Netscape Communicator in May 1995. In short time, it was renamed to LiveScript. At the moment, the word "live" was convenient from a marketing point of view. In December 1995, Netscape Communications and Sun closed the deal: Mocha/LiveScript would be renamed JavaScript, and it would be presented as a scripting language for small client-side tasks in the browser, while Java would be promoted as a bigger, professional tool to develop rich web components.
+
+https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
+https://auth0.com/blog/a-brief-history-of-javascript/
+
+
+### Java-like syntax
+
+Java-like Syntax
+Although keeping the syntax close to Java was not the original idea behind JavaScript, marketing forces changed that. In retrospective, although a different syntax might have been more convenient for certain features, it is undeniable that a familiar syntax has helper JavaScript gain ground easily.
+
+Compare this Java example:
+
+```Java
+public class Sample {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    try {
+      final MissileSilo silo = new MissileSilo("silo.weapons.mil");
+      silo.launchMissile(args[0]);
+    } catch(Exception e) {
+      System.out.println("Unexpected exception: " + e);
+    }
+  }
+}
+```
+
+To this (modern) JavaScript example:
+
+```Java
+console.log('Hello world');
+try {
+  const silo = new MissileSilo('silo.weapons.mil');
+  silo.launchMissile(process.argv[0]);
+} catch(e) {
+  console.log('Unexpected exception' + e);
+}
+```
+
 ### Background
 
 Brief history, use cases.
@@ -198,3 +248,9 @@ maybe.
 ### JQuery
 
 maybe.
+
+
+### References
+
+
+https://www.w3schools.com/js/
