@@ -1,265 +1,144 @@
 # cpsc330-javascript
 
-Class presentation on JavaScript
+## Per 11 o'clock student presentation Order on D2L, we're using Windows
 
 ---
 
-## Topics
+## From Prog+Language+Presentation+Goal.docx:
 
+## Presentation
 
-### History
+- (2 points) Little bit of history about the language
+- (3 points) class of problems for which the language is particularly well suited for, get your class excited about what they are about to learn. 
+- What is the language really good at, it’s strength
+- What is the language not so good at, it’s weaknesses
+- existing sites on the web, applications that use this tool
+- (5 points) Basic Info – For example:
+- Is your language compiled or interpreted
+- Talk about the Variables of the language:
+- Case sensitive
+- Static/dynamic
+- Strong type casting/weak type casting
+- Do variables need to be declared
+- Strong typing
+- Quickly go through the 2 example program handouts that you created and handed out to the students.
+- Does it easily integrate with other languages
+- Is it getting more popular or less popular? If less what language is replacing it. If more, what language is it replacing?
 
-JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was inspired by Java, Scheme and Self.
+- (20 Points) Technical Presentation - During the presentation: speak clearly, speak loud enough for the students in the back row to hear, walk around during the student hands-on exercises to make sure that they are doing the work and check to see if they need help, don’t read off of the slides – use them as a guide, etc.
+  
+- (65 points) Presentation Hands-On Portion – THIS IS WHERE YOU SHOULD SPEND 75%-80% of your presentation time. Demonstrate the strengths of the language.  Spend a large amount of time showing the strengths of the language through actual programs, explain how they work, let the students give it a try after each example by asking them to do something. Look on D2L under the content tab, there is a folder entitled Presentation guide that gives a lot of detail about your language and what you want to make sure to cover.
 
-Early design choices like automatic semicolon insertion (ASI), the event loop, lack of classes, unusual inheritance (prototypical) and type coercion are laughed at by people who have not taken the time to understand the thinking behind them.
+- (5 Points) – Create an appropriate in class assignment for college juniors; that the student will work on. You must have a working solution
 
-Even Brendan Eich, the creator of the language, is occasionally apologetic for design decisions he made for the language.
+## General Info:
 
-What was meant to be a Scheme for the browser turned into something very different. The pressure to close the deal with Sun and make Mocha a scripting companion to Java forced Eich's hand. A Java-like syntax was required, and familiar semantics for many common idioms was also adopted. So Mocha was not like Scheme at all. It looked like a dynamic Java, but underneath it was a very different beast: a premature lovechild of Scheme and Self, with Java looks.
-
-The prototype of Mocha was integrated into Netscape Communicator in May 1995. In short time, it was renamed to LiveScript. At the moment, the word "live" was convenient from a marketing point of view. In December 1995, Netscape Communications and Sun closed the deal: Mocha/LiveScript would be renamed JavaScript, and it would be presented as a scripting language for small client-side tasks in the browser, while Java would be promoted as a bigger, professional tool to develop rich web components.
-
-https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
-https://auth0.com/blog/a-brief-history-of-javascript/
-
-
-### Java-like syntax
-
-Although keeping the syntax close to Java was not the original idea behind JavaScript, marketing forces changed that. In retrospective, although a different syntax might have been more convenient for certain features, it is undeniable that a familiar syntax has helper JavaScript gain ground easily.
-
-Compare this Java example:
-
-```Java
-public class Sample {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-    try {
-      final MissileSilo silo = new MissileSilo("silo.weapons.mil");
-      silo.launchMissile(args[0]);
-    } catch(Exception e) {
-      System.out.println("Unexpected exception: " + e);
-    }
-  }
-}
-```
-
-To this (modern) JavaScript example:
-
-```Java
-console.log('Hello world');
-try {
-  const silo = new MissileSilo('silo.weapons.mil');
-  silo.launchMissile(process.argv[0]);
-} catch(e) {
-  console.log('Unexpected exception' + e);
-}
-```
-
-### Functions are objects
-
-```Javascript
-var myFunction = function() {
-  console.log('hello');
-}
-otherFunction(myFunction);
-myFunction.property = '1';
-```
-
-### Background
-
-Brief history, use cases.
-
-### Future
-
-Evolving language, ECMAScript etc
-
-### Debugger
-
-Browser developer console (ctrl+shift+k in Firefox)
-
-<https://www.w3schools.com/js/js_debugging.asp>
-
-### Variables
-
-Dynamic vs static typed languages
-
-Paste this in the developer console ([source](https://stackoverflow.com/questions/57456188/why-is-the-result-of-ba-a-a-tolowercase-banana))
-
-```javascript
-document.write(('b' + 'a' + + 'a' + 'a').toLowerCase());
-```
-
-Block scope, `let` keyword
-
-Hoisting: variable declarations are 'hoisted' to the top -> variables can be used BEFORE they're declared.
-
-Establishing invariants: `const`
-
-#### Arrays
-
-#### Objects
-
-`this` keyword
-
-#### typeof
-
-#### null vs undefined
+- keep examples small, do not give large examples because if a student(s) falls behind it is hard to catch up
+- let students start by doing solving a problem with a for or while loop just to get used to the language syntax and learn how to compile and run it
+- try to show as many capabilities of a language as possible, meaning you do not need to show them one capability 10 times
+- it is best to put pictures in your slides showing students where to click vs paragraphs of words on the slides
+- do a small example first of a capability, then ask students to try their own example
+- ever once in a while make slightly larger problems for the students where solution will involving using 3/4 new capabilities they just learned. For example from Wednesday presentation a problem that involves: textbox, label, listbox, button
+- let students start by doing something with a for or while loop just to get used to the language syntax and learn how to compile and run it
+- try to show as many capabilities of a language as possible, meaning you do not need to show them one capability 10 times
 
 ---
 
-### Operators
+## From presentation-Language-outline (1).docx:
 
-Arithmetic, assignment, string, comparision, bitwise.
+## JavaScript/HTML/Debugger
 
----
+JavaScript 
+- Can Change HTML Content, https://www.w3schools.com/js/
 
-### Control structures
+  - USE THE TRY IT YOURSELF on this site
 
-// Stolen from [w3schools](https://www.w3schools.com/js/js_loop_for.asp)
+- JS HOME: use the site’s try it option
+- JS Introduction (just mention that onclick is an event, more about this later)
+- JS Where To
+- JS Output
+- Go through the below quickly, let them give it a try on the site:
+  - JS Statements
+  - JS Syntax
+  - JS Comments
+  - JS Variables
+  - JS Operators
+  - JS Arithmetic
+  - JS Assignment
+  - JS Data Types
+  - JS Functions
+  - JS Objects
+  - JS Scope – review global
+  - JS Events
+  - JS Strings
 
-#### `for` - loops through a block of code a number of times
+Take a break from the website and do the below
 
-```javascript
-for (i = 0; i < 5; i++) {
-  text += "The number is " + i + "<br>";
-}
-```
+- give them a simple JavaScript programs and show them 
+how to run it (stop using the try it on the website), let them actually do it themselves.
+- give them a problem to solving using the information they learned above and let them write it in JavaScript and run it
 
-#### `for/in` - loops through the properties of an object
+Go through the below quickly, let them give it a try on the site:
 
-```javascript
-var person = {fname:"John", lname:"Doe", age:25};
+- JS String Methods
+- JS Numbers
+- JS Number Methods
+- JS Arrays
+- JS Array Methods
+- JS Array Sort
+- JS Dates
+- JS Date Formats
+- JS Date Get Methods
+- JS Date Set Methods
+- JS Math
+- JS Random
+- JS Booleans
+- JS Comparisons
+- JS Conditions
+- JS Switch
+- JS Loop For
+- JS Loop While
+- JS Break
+- JS Type Conversion
+- JS Bitwise
+- JS RegExp
 
-var text = "";
-var x;
-for (x in person) {
-  text += person[x];
-}
-```
+Take a break from the website and do the below
 
-#### `for/of` - loops through the values of an iterable object
+- give them a problem to solving using the information they learned above and let them write it in JavaScript and run it
 
-```javascript
-// Over array
-var cars = ['BMW', 'Volvo', 'Mini'];
-var x;
+Go through the below quickly, let them give it a try on the site:
 
-for (x of cars) {
-  document.write(x + "<br >");
-}
+- JS Errors
+- JS Debugging
 
-// Over string
-var txt = 'JavaScript';
-var x;
+Slow down and take your time, use the website:
 
-for (x of txt) {
-  document.write(x + "<br >");
-}
-```
+- JS Forms
+- Forms API
 
-#### `while` - loops through a block of code while a specified condition is true
+Take a break from the website and do the below
 
-```javascript
-while (i < 10) {
-  text += "The number is " + i;
-  i++;
-}
-```
+- give them a problem to solving using the information they learned above and write let them write it in JavaScript and run it
 
-#### `do/while` - also loops through a block of code while a specified condition is true
+- give them ANOTHER problem to solving using the information they learned above and write let them write it in JavaScript and run it
 
-```javascript
-do {
-  text += "The number is " + i;
-  i++;
-}
-while (i < 10);
-```
+JS Objects: go through the below quickly, let them give it a try on the site:
 
----
+- Object Methods
+- Object Constructors
+- Object Prototypes
 
-### Comments
+JS Functions go through these using the site, try this:
 
----
+- Function Definitions
+- Function Parameters
+- Function Invocation
+- Function Call
 
-### Output
+Take a break from the website and do the below
 
-Console, DOM manipulation
+- give them a problem to solving using the information they learned above and write let them write it in JavaScript and run it
 
----
-
-### Functions
-
-Regular functions
-
-```javascript
-hello = function() {
-  return "Hello World!";
-}
-```
-
-Arrow functions
-
-```javascript
-hello = () => {
-  return "Hello World!";
-}
-```
-
-
-
----
-
-### Responding to HTML events (maybe?)
-
----
-
-### Regular expressions
-
----
-
-### Error handling
-
-throw, try, catch, finally.
-
----
-
-### Webassembly
-
-WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications.
-
----
-
-### emscripten
-
-Compile C/C++ to Javascript WebASM via LLVM. Awesome, too complex for presentation?
-
----
-
-### Frameworks
-
-Node.js, React.js
-
----
-
-### Strict mode (ECMA 5)
-
-maybe. can prevent errors.
-
----
-
-### AJAX
-
-maybe.
-
----
-
-### JQuery
-
-maybe.
-
-
-### References
-
-
-https://www.w3schools.com/js/
+Debugger – Firefox developer tool
+- https://developer.mozilla.org/en-US/docs/Tools/Debugger 
