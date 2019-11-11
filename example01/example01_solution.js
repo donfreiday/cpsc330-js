@@ -1,29 +1,54 @@
-// CPSC330 JavaScript Example 1
-var button1 = document.getElementById("button1");
-button1.addEventListener("click", setBackground);
+// CPSC330 JavaScript Example 1 (Solution)
 
-////////////////////////////////////////////////////////////////////
-// Write code here to add an event listener to button2's click event
-////////////////////////////////////////////////////////////////////
-var button2 = document.getElementById("button2");
-button2.addEventListener("click", setForeground);
-
-// Sets document background color
-function setBackground() {
+// Add an event listener to randomize background button;
+// in this case we call a function defined below.
+var btnRandomBg = document.getElementById("btnRandomBg");
+btnRandomBg.addEventListener("click", randomBackground);
+function randomBackground() {
     var color = getRandomColor();
-    document.getElementById("backgroundColorHeader").innerHTML = "Background: " + color;
+    bgPicker.value = color;
     document.body.style.backgroundColor = color;
-}
+};
 
-// Sets document background color
-function setForeground() {
-    ////////////////////////////////////////////////////////////////////
-    // Fill in code to change document foreground color here
-    ////////////////////////////////////////////////////////////////////
+// Add an event listener to background color picker;
+// in this case we use an anonymous function
+var bgPicker = document.getElementById("bgPicker");
+bgPicker.addEventListener("input", function () {
+    document.body.style.backgroundColor = bgPicker.value;
+});
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+function randomForeground() {
+    // (1) Fill in code to change document foreground color here
+    // Hint: The foreground color is determined by document.body.style.color
     var color = getRandomColor();
-    document.getElementById("foregroundColorHeader").innerHTML = "Foreground: " + color;
     document.body.style.color = color;
-}
+    fgPicker.value = color;
+
+};
+// (2) Write code here to add an event listener to btnRandomFg's click event
+var btnRandomFg = document.getElementById("btnRandomFg");
+btnRandomFg.addEventListener("click", randomForeground);
+
+// (3) Write code here that uses an anonymous function to handle fgPicker's input event using an anonymous function
+var fgPicker = document.getElementById("fgPicker");
+fgPicker.addEventListener("input", function () {
+    document.body.style.color = fgPicker.value;
+});
+
+// (4) Add an event listener to btnLoud and make Lorem Ipsum all caps
+// (5) Bonus: use a regex to change periods to exclamation points!
+// (5) Hint: str.replace(/foo/g, "bar") will replace all occurrences of foo with bar in the string str
+// (5) Hint again: remember, . is a special character in regexes
+var btnLoud = document.getElementById("btnLoud");
+btnLoud.addEventListener("click", function () {
+    var p = document.getElementById("loremIpsum");
+    p.innerHTML = p.innerHTML.toUpperCase();
+    p.innerHTML = p.innerHTML.replace(/\./g, "!");
+});
+
+////////////////////////////////////////////////////////////////////////////////////////
 
 // Returns a random color.
 // From https://stackoverflow.com/a/1484514
@@ -34,4 +59,4 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-}
+};

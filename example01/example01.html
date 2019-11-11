@@ -12,15 +12,16 @@
         <h1>Example 01: Button events</h1>
         <panel>
             <!-- Notice the id attribute. This is how we will access our buttons from JavaScript. -->
-            <button class="btnLarge" id="button1">Randomize background</button>
-            <button class="btnLarge" id="button2">Randomize foreground</button>
+            <button class="btnLarge" id="btnRandomBg">Randomize background</button>
+            <button class="btnLarge" id="btnRandomFg">Randomize foreground</button>
         </panel>
 
-        <!-- We will use these tags to display our color. -->
-        <h3 id="backgroundColorHeader">Background: Default</h3>
-        <h3 id="foregroundColorHeader">Foreground: Default</h3>
+        <p>Pick background: <input type="color" id="bgPicker" value="#ff00ff"><br />
+        Pick foreground: <input type="color" id="fgPicker" value="#ff00ff"></p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <button class="btnLarge" id="btnLoud">Make Lorem Ipsum LOUD!</button>
     </div>
 
     <!-- This tag will load and execute the script in the file specified by src. -->
