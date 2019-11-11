@@ -5,11 +5,13 @@ button1.addEventListener("click", setBackground);
 ////////////////////////////////////////////////////////////////////
 // Write code here to add an event listener to button2's click event
 ////////////////////////////////////////////////////////////////////
+var button2 = document.getElementById("button2");
+button2.addEventListener("click", setForeground);
 
 // Sets document background color
 function setBackground() {
     var color = getRandomColor();
-    document.getElementById("backgroundColorHeader").innerHTML = "Background:" + color;
+    document.getElementById("backgroundColorHeader").innerHTML = "Background: " + color;
     document.body.style.backgroundColor = color;
 }
 
@@ -18,6 +20,9 @@ function setForeground() {
     ////////////////////////////////////////////////////////////////////
     // Fill in code to change document foreground color here
     ////////////////////////////////////////////////////////////////////
+    var color = getRandomColor();
+    document.getElementById("foregroundColorHeader").innerHTML = "Foreground: " + color;
+    document.body.style.color = color;
 }
 
 // Returns a random color.
