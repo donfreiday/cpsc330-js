@@ -5,6 +5,8 @@ var b = 2;
 var c = a + b;
 console.log(a + " + " + b + " = " + c);
 
+// DO NOT CHANGE THE ABOVE IT'S ALREADY IN PPT
+
 //JS Statements
 //JS Syntax
 //JS Comments
