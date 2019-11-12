@@ -8,27 +8,31 @@
     <title>Example: Forms</title>
 </head>
 <body>
+    <!-- This tag will load and execute the script in the file specified by src. -->
+    <script src="forms.js"></script>
+    <!-- Try the examples yourself before using the solution script. -->
+    <!--<script src="forms_solution.js"></script>-->
+
     <div class="divMain">
         <!-- action="" defines how you want the browser to handle the form when it is submitted
-            to a CGI (Common Gateway Interface) program running on the server. 
+            to a CGI (Common Gateway Interface) program running on the server.
             As this example is not designed to submit anything, the URL for the CGI program is omitted.
 
-            method="GET" defines the method data is passed to the server when the form is submitted. 
+            method="GET" defines the method data is passed to the server when the form is submitted.
             In this case the atttibute is irrelevant as the example form does not submit anything. -->
         <form id="myForm" action="" method="GET">
             Enter your name: <br>
-            <input type="text" id="firstName" value=""><br />
-            <input type="text" id="lastName" value=""><br />
-            <input type="button" id="btnSubmit" value="Add to list">
+            <input type="text" name="firstName" value=""><br />
+            <input type="text" name="lastName" value=""><br />
+
+            <!-- The 'this' keyword references the button control;
+                 form is a property of the button control and represents the form object. -->
+            <input type="button" id="btnSubmit" value="Add to list" onClick="appendName(this.form)">
         </form>
 
         <ul id="list"></ul>
     </div>
-
-    <!-- This tag will load and execute the script in the file specified by src. -->
-    <script src="forms.js"></script>
-
-    <!-- Try the examples yourself before using the solution script. -->
-    <!--<script src="forms_solution.js"></script>-->
 </body>
 </html>
+
+<!--Adapted from https://www.javaworld.com/article/2077176/using-javascript-and-forms.html -->
