@@ -15,3 +15,4 @@ console.log(a + " + " + b + " = " + c);
 
 // (4) Call add(a, z)
 
+// We will be doing more complicated examples soon, don't worry :)
