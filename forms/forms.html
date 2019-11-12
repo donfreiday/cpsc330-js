@@ -9,12 +9,19 @@
 </head>
 <body>
     <div class="divMain">
+        <!-- action="" defines how you want the browser to handle the form when it is submitted
+            to a CGI (Common Gateway Interface) program running on the server. 
+            As this example is not designed to submit anything, the URL for the CGI program is omitted.
+
+            method="GET" defines the method data is passed to the server when the form is submitted. 
+            In this case the atttibute is empty as the example form does not submit anything. -->
         <form id="myForm" action="" method="GET">
             Enter something in the box: <br>
             <input type="text" id="firstName" value=""><br />
             <input type="text" id="lastName" value=""><br />
             <input type="button" id="btnSubmit" value="Add to list">
         </form>
+
         <ul id="list"></ul>
     </div>
 
