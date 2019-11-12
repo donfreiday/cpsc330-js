@@ -3,13 +3,17 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="the_basics.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Example: Forms</title>
 </head>
 <body>
     <div class="divMain">
-        <h1>Press F12 to open the developer console.</h1>
+        <form name="myForm" action="" method="GET">
+            Enter something in the box: <br>
+            <input type="text" name="inputBox" value=""><br />
+            <input type="button" name="btnSubmit" Value="Click">
+        </form>
     </div>
 
     <!-- This tag will load and execute the script in the file specified by src. -->
