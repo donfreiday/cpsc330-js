@@ -1,0 +1,36 @@
+﻿<!-- CPSC330 Javascript: Colorful events -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="colorful_events.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Example: Colorful Events</title>
+</head>
+<body>
+    <div class="divMain">
+        <h1>Example: Colorful events</h1>
+        <panel>
+            <!-- Notice the id attribute. This is how we will access our buttons from JavaScript. -->
+            <button class="btnLarge" id="btnRandomBg">Randomize background</button>
+            <button class="btnLarge" id="btnRandomFg">Randomize foreground</button>
+        </panel>
+
+        <p>
+            Pick background: <input type="color" id="bgPicker" value="#ff00ff"><br />
+            Pick foreground: <input type="color" id="fgPicker" value="#ff00ff">
+        </p>
+
+        <p id="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <button class="btnLarge" id="btnLoud">Make Lorem Ipsum LOUD!</button>
+    </div>
+
+    <!-- This tag will load and execute the script in the file specified by src. -->
+    <script src="colorful_events.js"></script>
+
+    <!-- Try the examples yourself before using the solution script. -->
+    <!--<script src="colorful_events_solution.js"></script>-->
+</body>
+</html>

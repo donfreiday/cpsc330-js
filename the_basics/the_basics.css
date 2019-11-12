@@ -1,0 +1,25 @@
+/* CPSC330 Javascript: The basics*/
+
+h1 {
+    padding: 20px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+p {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.divMain {
+    text-align:center; 
+    padding:50px 100px;
+}
+
+.btnLarge {
+    text-align: center;
+    padding: 15px 32px;
+    font-size: 32px;
+}
