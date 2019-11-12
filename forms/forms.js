@@ -1,8 +1,4 @@
-// CPSC330 JavaScript: The Basics
+// CPSC330 JavaScript: Forms
 
-console.log("Javascript: The Basics")
-
-var a = 1;
-var b = 2;
-var c = a + b;
-console.log(a + " + " + b + " = " + c);
+// Consider using:
+// https://www.javaworld.com/article/2077176/using-javascript-and-forms.html

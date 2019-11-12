@@ -1,22 +1,27 @@
 // CPSC330 JavaScript: The Basics
 
-console.log("Javascript: The Basics")
+console.log("Javascript: More Basics")
 
-var a = 1;
-var b = 2;
-var c = a + b;
-console.log(a + " + " + b + " = " + c);
 
-//JS Statements
-//JS Syntax
-//JS Comments
-//JS Variables
-//JS Operators
-//JS Arithmetic
-//JS Assignment
-//JS Data Types
-//JS Functions
-//JS Objects
-//JS Scope – review global
-//JS Events
-//JS Strings
+//JS String Methods
+//JS Numbers
+//JS Number Methods
+//JS Arrays
+//JS Array Methods
+//JS Array Sort
+//JS Dates
+//JS Date Formats
+//JS Date Get Methods
+//JS Date Set Methods
+//JS Math
+//JS Random
+//JS Booleans
+//JS Comparisons
+//JS Conditions
+//JS Switch
+//JS Loop For
+//JS Loop While
+//JS Break
+//JS Type Conversion
+//JS Bitwise
+//JS RegExp
