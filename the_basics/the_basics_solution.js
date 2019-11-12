@@ -7,16 +7,18 @@ console.log(a + " + " + b + " = " + c);
 
 // DO NOT CHANGE THE ABOVE IT'S ALREADY IN PPT
 
-//JS Statements
-//JS Syntax
-//JS Comments
-//JS Variables
-//JS Operators
-//JS Arithmetic
-//JS Assignment
-//JS Data Types
-//JS Functions
-//JS Objects
-//JS Scope – review global
-//JS Events
-//JS Strings
+
+// (1) Declare a variable z and assign it a string.
+var z = "z";
+
+// (2) Write a function add(foo, bar) here that adds two variables and logs the result to the console.
+function add(foo, bar) {
+    console.log(foo + bar);
+}
+
+// (3) Call add(a, "hello")
+add(a, "hello");
+
+// (4) Call add(a, z)
+add(a, z);
+
